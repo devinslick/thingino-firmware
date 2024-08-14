@@ -28,7 +28,7 @@ if [ "POST" = "$REQUEST_METHOD" ]; then
 			:>$tmp_file
 			for i in $seq; do
 				eval s="\$POST_ntp_server_${i}"
-				[ -n "$s" ] && echo "server ${s} iburst" >>$tmp_file
+				[ -n "$s" ] && echo "server ${s} iburst		#custom-ntp-server" >>$tmp_file
 			done
 			unset i; unset s
 			mv $tmp_file /etc/ntp.conf
