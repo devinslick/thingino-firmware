@@ -60,6 +60,10 @@ fi
 <input type="text" id="tz_data" name="tz_data" value="<%= $tz_data %>" class="form-control" readonly>
 <span class="hint text-secondary">Control string of the timezone selected above. Read-only field, only for monitoring.</span>
 </p>
+<label for="allow-ntp-dhcp">
+   <input type="checkbox" id="allow-ntp-dhcp" name="allow-ntp-dhcp">
+   Ignore DHCP-provided NTP servers
+</label>
 <p><a href="#" id="frombrowser">Pick up timezone from browser</a></p>
 </div>
 <div class="col">
